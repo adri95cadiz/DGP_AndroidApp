@@ -17,5 +17,4 @@ import android.widget.TextView;
 public class Principal extends BasicActivity{
 
 
-
 }
