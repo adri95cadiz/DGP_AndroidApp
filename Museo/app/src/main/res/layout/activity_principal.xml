@@ -1,37 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:openDrawer="start">
+    tools:openDrawer="start" >
 
     <!-- Vamos a crear un boton para ejecutar el Scan del codigo QR -->
+    <!-- android:layout_centerhorizontal="true" -->
     <button
         android:id="@+id/scan_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerhorizontal="true"
         android:text="Scan" />
 
     <!-- Vamos a crear un campo de texto, donde mostraremos la información capturada -->
+    <!--android:textisselectable="true"
+    android:layout_centerhorizontal="true"-->
     <textview
         android:id="@+id/scan_format"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textisselectable="true"
-        android:layout_centerhorizontal="true"
         android:layout_below="@id/scan_button" />
 
     <!-- Vamos a crear un campo de texto, donde mostraremos la información capturada -->
+    <!--android:textisselectable="true"
+        android:layout_centerhorizontal="true"-->
     <textview
         android:id="@+id/scan_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textisselectable="true"
-        android:layout_centerhorizontal="true"
         android:layout_below="@id/scan_format" />
 
     <include
@@ -43,4 +42,4 @@
         <!--app:headerLayout="@layout/nav_header_principal"
         app:menu="@menu/activity_principal_drawer"-->
 
-</android.support.v4.widget.DrawerLayout>
+</RelativeLayout>
